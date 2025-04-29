@@ -3,22 +3,17 @@
 using namespace std;
 
 int main() {
-    // Declare and initialize the array with string elements
-    string codes[] = {"B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179"};
+    // Initialize array exactly as given in exercise
+    string elements[8] = {"B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179"};
     
-    // Get the number of elements in the array
-    int size = sizeof(codes) / sizeof(codes[0]);
-
-    cout << "Elements that start with 'B':" << endl;
-
-    // Loop through each element in the array
-    for (int i = 0; i < size; i++) {
-        // Check if the first character is 'B'
-        if (codes[i][0] == 'B') {
-            // Output the element
-            cout << codes[i] << endl;
+    // Simple for loop checking each element
+    for (int i = 0; i < 8; i++) {
+        // Check if first character is 'B'
+        if (elements[i][0] == 'B') {
+            // Print the element if it starts with B
+            cout << elements[i] << endl;
         }
     }
-
+    
     return 0;
 }
